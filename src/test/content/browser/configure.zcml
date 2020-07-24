@@ -18,4 +18,19 @@
       directory="static"
       />
 
+    <browser:page
+      name='use'
+      for='*'
+      class='.view.Use'
+      permission='zope2.View'
+      />
+    
+    <browser:page
+      for="*"
+      name="main_template"
+      class=".main_template.MainTemplate"
+      permission="zope.Public"
+      layer="test.content.interfaces.ITestContentLayer"
+      />
+
 </configure>
