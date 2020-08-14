@@ -38,7 +38,7 @@ require(["jquery", "THREE"], function($, THREE) {
             this.stats.showPanel(0);
             document.getElementById('view-box').appendChild(this.stats.dom);
 
-            this.orbitControls = new OrbitControls(this.camera, this.renderer)
+            this.orbitControls = new OrbitControls(this.camera, this.renderer.domElement)
 
 
             this.render();
